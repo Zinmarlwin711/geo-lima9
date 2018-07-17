@@ -5,8 +5,8 @@ myapp = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-@myapp.route("/compose")
+@myapp.route("/index3")
 def compose():
-    return render_template("compose.html")
+    return render_template("index3.html")
 if __name__=="__main__":
     myapp.run(debug=True)
